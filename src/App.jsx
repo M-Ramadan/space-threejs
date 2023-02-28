@@ -1,6 +1,7 @@
 import { OrbitControls, ScrollControls, Scroll } from "@react-three/drei";
 import baffle from "baffle";
-import Tau from "../Tau";
+import { useEffect } from "react";
+import Tau from "./components/Tau";
 import Intro from "./components/intro";
 
 // function VideoText(props) {
@@ -28,6 +29,21 @@ import Intro from "./components/intro";
 // }
 
 function App() {
+  useEffect(() => {
+    const target = baffle(".title");
+    target.set({
+      characters: "░P░O░R░T░A░L░",
+      speed: 100,
+    });
+    target.start();
+    target.reveal(1000, 1000);
+  });
+
+  //   <OrbitControls
+  //   enableZoom={false}
+  //   enablePan={false}
+  //   enableRotate={false}
+  // />
   return (
     <>
       <ambientLight />
@@ -36,7 +52,7 @@ function App() {
         castShadow
         shadow-mapSize={1024}
       />
-      // <OrbitControls enableZoom={false} />
+
       <Intro />
       <ScrollControls pages={6} damping={0.1}>
         <Tau />
@@ -53,12 +69,12 @@ function App() {
               transform: `translate(-50%,-50%)`,
             }}
           >
-            Space
+            PORTAL
           </h1>
 
-          <div className="row" style={{ position: "absolute", top: `132vh` }}>
+          <div className="first__sec">
             <h2>Be a Man of the Future.</h2>
-            <p style={{ maxWidth: "400px" }}>
+            <p>
               The International Space Station is a large spacecraft in orbit
               around Earth. It serves as a home where crews of astronauts and
               cosmonauts live. The space station is also a unique science
@@ -68,13 +84,10 @@ function App() {
             <button>Read more</button>
           </div>
 
-          <div className="row" style={{ position: "absolute", top: `230vh` }}>
-            <div
-              className="col"
-              style={{ position: "absolute", right: `40px`, width: "540px" }}
-            >
-              <h2 style={{ maxWidth: "440px" }}>Tech-Savvy Side</h2>
-              <p style={{ maxWidth: "440px" }}>
+          <div className="second__sec">
+            <div className="col">
+              <h2>Tech-Savvy Side</h2>
+              <p>
                 space station, an artificial structure placed in orbit and
                 having the pressurized enclosure, power, supplies, and
                 environmental systems necessary to support human habitation for
@@ -90,16 +103,26 @@ function App() {
             </div>
           </div>
 
-          <h2
-            style={{
-              position: "absolute",
-              top: "350vh",
-              left: "50%",
-              transform: `translate(-50%,-50%)`,
-            }}
-          >
-            Cutting-Edge of Grooming
-          </h2>
+          <div className="third__sec">
+            <div className="col">
+              <h2>Tech-Savvy Side</h2>
+              <p>
+                space station, an artificial structure placed in orbit and
+                having the pressurized enclosure, power, supplies, and
+                environmental systems necessary to support human habitation for
+                extended periods. Depending on its configuration, a space
+                station can serve as a base for a variety of activities. These
+                include observations of the Sun and other astronomical objects,
+                study of Earth’s resources and environment, military
+                reconnaissance, and long-term investigations of the behaviour of
+                materials and biological systems—including human physiology and
+                biochemistry—in a state of weightlessness, or microgravity.
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+
+          <h2>Cutting-Edge of Grooming</h2>
 
           <button
             style={{

@@ -25,16 +25,41 @@ canvas {
   }
 }
 
-.fist-des {
+.first__sec {
   position: absolute;
-
+  top: 132vh;
   left: 100px;
+  p {
+    max-width: 400px;
+  }
 }
 
-.second-des {
+.second__sec {
   position: absolute;
+  top: 230vh;
   left: 40;
   left: 48px;
   width: 540px;
   transform: translate(150%, 10px);
+  h2 {
+    max-width: 440px;
+  }
+  p {
+    max-width: 440px;
+  }
+}
+
+.third__sec {
+  position: absolute;
+  top: 330vh;
+  left: 40;
+  left: 48px;
+  width: 540px;
+  transform: translate(150%, 10px);
+  h2 {
+    max-width: 440px;
+  }
+  p {
+    max-width: 440px;
+  }
 }
