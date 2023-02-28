@@ -1,0 +1,40 @@
+body,
+html,
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #101010;
+  background: radial-gradient(circle at bottom center, #212121 0%, #101010 80%);
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  overflow: hidden;
+}
+
+canvas {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  .title {
+    z-index: -1;
+  }
+}
+
+.fist-des {
+  position: absolute;
+
+  left: 100px;
+}
+
+.second-des {
+  position: absolute;
+  left: 40;
+  left: 48px;
+  width: 540px;
+  transform: translate(150%, 10px);
+}
