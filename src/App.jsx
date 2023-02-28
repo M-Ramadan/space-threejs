@@ -1,4 +1,4 @@
-import { OrbitControls, ScrollControls, Scroll } from "@react-three/drei";
+import { ScrollControls, Scroll } from "@react-three/drei";
 import baffle from "baffle";
 import { useEffect } from "react";
 import Tau from "./components/Tau";
