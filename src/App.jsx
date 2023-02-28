@@ -86,7 +86,7 @@ function App() {
 
           <div className="second__sec">
             <div className="col">
-              <h2>Tech-Savvy Side</h2>
+              <h2>Tech-Savy Side</h2>
               <p>
                 space station, an artificial structure placed in orbit and
                 having the pressurized enclosure, power, supplies, and
