@@ -118,7 +118,7 @@ function App() {
                 materials and biological systems—including human physiology and
                 biochemistry—in a state of weightlessness, or microgravity.
               </p>
-              <button>Read more</button>
+              <button>Read moree</button>
             </div>
           </div>
 
