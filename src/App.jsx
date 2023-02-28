@@ -53,7 +53,7 @@ function App() {
               transform: `translate(-50%,-50%)`,
             }}
           >
-            Tau
+            Space
           </h1>
 
           <div className="row" style={{ position: "absolute", top: `132vh` }}>
