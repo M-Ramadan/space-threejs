@@ -56,25 +56,27 @@ const Model = ({ ...props }) => {
     });
 
     tl.current
-      .to(group.current.rotation, { y: -5 }, 2)
-      .to(group.current.position, { x: 5 }, 2)
+      .to(group.current.rotation, { y: -1, duration: 4 }, 2)
+      .to(group.current.position, { x: 5, duration: 4 })
 
-      .to(group.current.rotation, { y: 5 }, 6)
-      .to(group.current.position, { x: -5 }, 6)
+      .to(group.current.rotation, { y: 1, duration: 4 })
+      .to(group.current.position, { x: -5, duration: 4 })
 
-      .to(group.current.rotation, { y: -7 }, 11)
-      .to(group.current.rotation, { x: 7 }, 11)
-      // .to(group.current.position, { x: 0 }, 11)
+      .to(group.current.rotation, { y: 0, duration: 4 })
+      .to(group.current.rotation, { x: 0, duration: 4 })
+      .to(group.current.position, { x: 5, duration: 4 })
 
-      .to(group.current.rotation, { y: -5 }, 13)
-      .to(group.current.position, { x: 5 }, 13)
-      .to(group.current.position, { x: 0 }, 13)
+      .to(group.current.rotation, { y: 0, duration: 4 })
+      .to(group.current.rotation, { x: -5, duration: 4 })
+      .to(group.current.position, { x: 0, duration: 4 })
 
-      .to(group.current.rotation, { y: 5 }, 16)
-      .to(group.current.position, { x: -5 }, 16)
+      .to(group.current.rotation, { y: 0, duration: 4 })
+      .to(group.current.rotation, { x: 5, duration: 4 })
+      .to(group.current.position, { x: 0, duration: 4 })
 
-      .to(group.current.rotation, { y: 0 }, 20)
-      .to(group.current.rotation, { x: 0 }, 20);
+      .to(group.current.rotation, { y: 0, duration: 4 })
+      .to(group.current.rotation, { x: 0, duration: 4 })
+      .to(group.current.position, { x: 0, duration: 4 });
   });
 
   useEffect(() => {

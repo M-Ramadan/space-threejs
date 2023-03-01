@@ -16,6 +16,41 @@ html,
   overflow: hidden;
 }
 
+.heading {
+  color: #bcbfc4;
+  text-transform: uppercase;
+  max-width: 400px;
+}
+
+.title {
+  color: #cdcbca;
+  position: absolute;
+  font-size: 13em;
+  transform: translate(-50%, -50%);
+}
+p {
+  color: #cdcbca;
+  max-width: 400px;
+  text-transform: capitalize;
+}
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: #cdcbca;
+  // background: rgb(2, 0, 36);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(2, 0, 36, 1) 0%,
+  //   rgba(121, 9, 9, 0.4710477941176471) 26%
+  // );
+
+  text-transform: capitalize;
+
+  background-color: #101010;
+  background: radial-gradient(circle at bottom center, #212121 0%, #101010 80%);
+}
+
 canvas {
   position: relative;
   z-index: 2;
@@ -27,39 +62,37 @@ canvas {
 
 .first__sec {
   position: absolute;
-  top: 132vh;
+  top: 113vh;
   left: 100px;
-  p {
-    max-width: 400px;
-  }
+}
+
+.first__sec__v2 {
+  position: absolute;
+  top: 154vh;
+
+  width: 540px;
+  left: -14px;
+  transform: translate(150%, 10px);
 }
 
 .second__sec {
   position: absolute;
-  top: 230vh;
-  left: 40;
-  left: 48px;
+
+  top: 192vh;
+  left: -14px;
   width: 540px;
   transform: translate(150%, 10px);
-  h2 {
-    max-width: 440px;
-  }
-  p {
-    max-width: 440px;
-  }
+}
+
+.second__sec__v2 {
+  position: absolute;
+  top: 253vh;
+
+  left: 100px;
 }
 
 .third__sec {
   position: absolute;
-  top: 330vh;
-  left: 40;
-  left: 48px;
-  width: 540px;
-  transform: translate(150%, 10px);
-  h2 {
-    max-width: 440px;
-  }
-  p {
-    max-width: 440px;
-  }
+  top: 322vh;
+  left: 100px;
 }
